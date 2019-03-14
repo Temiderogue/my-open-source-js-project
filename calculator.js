@@ -1,4 +1,10 @@
 var calculator = {
+    dif: function(){
+        return this.a - this.b;
+    },
+    div: function(){
+        return this.a / this.b;
+    },
     mul: function(){
         return this.a * this.b;
     },
@@ -14,4 +20,12 @@ var calculator = {
   
   calculator.read();
   alert( "Сумма = " + calculator.sum() );
+  alert( "Разность = " + calculator.dif() );
   alert( "Произведение = " + calculator.mul() );
+  alert( "Деление = " + calculator.div() );
+  alert(
+    "Сумма = " + calculator.sum() + 
+    "\nРазность = " + calculator.dif() +
+    "\nПроизведение = " + calculator.mul() +
+    "\nДеление = " + calculator.div()
+  );
